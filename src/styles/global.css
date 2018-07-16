@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu:300,400,700|Montserrat:300,400,600,700');
+
+:root {
+  --hover: #38ef7d;
+}
+
+body {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Gaegu', cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+}

@@ -1,0 +1,68 @@
+.List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.List__item {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  background: transparent;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  border: 2px solid currentColor;
+  color: #38ef7d;
+}
+
+.List__item::after {
+  visibility: hidden;
+  position: absolute;
+  right: 1em;
+  content: 'x';
+  font-size: 23px;
+  line-height: 15px;
+  font-family: 'Gaegu', cursive;
+}
+
+.List__item:hover {
+  color: white;
+  background: #ed213a;
+  border: 2px solid #ed213a;
+}
+
+.List__item:hover::after {
+  visibility: visible;
+}
+
+.item-enter {
+  transform: translateX(-120%);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.item-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.item-exit {
+  transition: 0.5s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.item-exit-active {
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.item-exit-done {
+  display: none;
+}

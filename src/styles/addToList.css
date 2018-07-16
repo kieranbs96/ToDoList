@@ -1,0 +1,31 @@
+.AddToList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AddToList__btn,
+.AddToList__input {
+  padding: 1em 2em;
+  border: 2px solid #fff;
+  font: inherit;
+  line-height: 1;
+  color: white;
+  transition: 0.25s;
+}
+
+.AddToList__btn {
+  background: none;
+  border: 2px solid;
+  margin: 0.5em 0 0.5em 0.5em;
+}
+
+.AddToList__input {
+  color: #333;
+  padding: 14.3px 2em;
+}
+
+.AddToList__btn:hover,
+.AddToList__btn:focus {
+  box-shadow: inset 9.5em 0 0 0 var(--hover);
+}
